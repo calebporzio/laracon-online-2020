@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-between items-center w-32 m-auto">
-        <button @click="increment">+</button>
-        <button @click="decrement">-</button>
+        <button v-on:click="increment">+</button>
+        <button v-on:click="decrement">-</button>
         <p>{{ count }}</p>
     </div>
 </template>
