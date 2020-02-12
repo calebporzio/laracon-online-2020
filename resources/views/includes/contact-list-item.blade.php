@@ -1,5 +1,5 @@
 <li class="border-b border-gray-200">
-    <a href="#" class="block hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+    <a href="/edit-contact/{{ $contact->id }}" class="block hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
     <div class="flex items-center px-4 py-4">
         <div class="min-w-0 flex-1 flex items-center">
         <div class="flex-shrink-0">
