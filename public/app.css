@@ -54681,7 +54681,7 @@ form>*+* { margin-top: 1.5em; }
 button { --color-code-green: #b5f4a5; --color-code-yellow: #ffe484; --color-code-purple: #d9a9ff; --color-code-red: #ff8383; --color-code-blue: #93ddfd; --color-code-white: #fff; box-sizing: inherit; border-style: solid; font-family: inherit; overflow: visible; text-transform: none; -webkit-appearance: button; background: transparent; cursor: pointer; line-height: inherit; background-color: #5a67d8; border-color: transparent; border-radius: 0.25rem; border-width: 1px; display: inline-flex; align-items: center; font-weight: 500; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); color: #fff; font-size: 0.875rem; }
 button:hover { background-color: #7f9cf5; }
 button[disabled] { background-color: #7f9cf5; cursor: not-allowed; }
-button:focus { outline: none; box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); border-color: #63b3ed; }
+button:focus { outline: none; box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); }
 .form-group>label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; line-height: 1.5; --color-code-green: #b5f4a5; --color-code-yellow: #ffe484; --color-code-purple: #d9a9ff; --color-code-red: #ff8383; --color-code-blue: #93ddfd; --color-code-white: #fff; box-sizing: inherit; border-width: 0; border-style: solid; border-color: #e2e8f0; display: block; font-weight: 500; margin-bottom: 0.25rem; color: #4a5568; font-size: 0.875rem; }
 .form-group>input { font-size: 0.875rem; }
 .form-group>span { font-size: 0.875rem; font-style: italic; color: #f56565; }
@@ -54697,7 +54697,7 @@ button:focus { outline: none; box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); bor
 body {background-color: #edf2f7; padding-top: 4rem; padding-bottom: 4rem;}
 body>form {margin: auto; width: 24rem;}
 input { width: 100%; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: #fff; border-color: #e2e8f0; border-width: 1px; border-radius: 0.25rem; padding-top: 0.5rem; padding-right: 0.75rem; padding-bottom: 0.5rem; padding-left: 0.75rem; font-size: 1rem; line-height: 1.5;}
-input:focus { outline: none; box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); border-color: #63b3ed;}
+input:focus { outline: none; box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); }
 ul { background: white; border-width: 1px; border-radius: 0.25rem; margin-top: 1rem; border-color: #e2e8f0; }
 :root {
   --color-code-green: #b5f4a5;
