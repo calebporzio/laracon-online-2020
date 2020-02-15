@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "calebporzio/sushi": "dev-master",
         "fideloper/proxy": "^4.2",
         "laravel/framework": "7.x-dev",
         "laravel/tinker": "^2.0",
@@ -62,7 +63,7 @@
     "repositories": {
         "local": {
             "type": "path",
-            "url": "../framework"
+            "url": "../sushi"
         }
     }
 }
