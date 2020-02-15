@@ -4,7 +4,7 @@
 </head>
 <body>
     <div id="app">
-        <counter></counter>
+        <dropdown></dropdown>
     </div>
 
     <script src="{{ mix('js/app.js') }}"></script>
