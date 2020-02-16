@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body { @apply .bg-gray-200; }
+.btn { @apply .inline-flex .items-center .px-4 .py-2 .border .border-gray-300 .text-sm .leading-5 .font-medium .rounded-md .text-gray-700 .bg-white .shadow-sm .rounded-md; }
+.btn:hover { @apply .bg-gray-100; }
+.btn:focus { @apply .outline-none .shadow-outline .border-blue-300; }
+.modal .wrapper { @apply fixed inset-0 flex justify-center items-center; background: rgba(0,0,0,0.2); }
+.modal .overlay { @apply fixed inset-0; }
+.modal .content { @apply fixed bg-white p-6 rounded shadow-lg; }
