@@ -2,7 +2,7 @@
 
 namespace {{ namespace }};
 
-class {{ class }} extends TestCase
+class {{ class }} extends \Tests\TestCase
 {
     //
 }
