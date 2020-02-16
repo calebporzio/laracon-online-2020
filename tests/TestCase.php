@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Schema;
 
 abstract class TestCase extends BaseTestCase
 {
+    use DatabaseTransactions;
+
     public function createApplication()
     {
         $app = require __DIR__.'/../bootstrap/app.php';
@@ -16,9 +18,13 @@ abstract class TestCase extends BaseTestCase
         $app->make(Kernel::class)->bootstrap();
 
         // Refresh sushi.
-        Schema::refreshDatabaseFile();
-        \App\Repo::setSqliteConnection(__DIR__.'/../database/database.sqlite');
-        (new \App\Repo)->migrate();
+        if (class_exists(\App\Repo::class)) {
+            $connection = \App\Repo::sushiConnectionName();
+            \DB::setDefaultConnection($connection);
+            Schema::refreshDatabaseFile();
+            (new \App\Repo)->migrate();
+            (new \App\Repo);
+        }
 
         return $app;
     }

@@ -23,6 +23,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if (class_exists(\App\Repo::class)) {
+            // Refresh sushi.
+            $connection = \App\Repo::sushiConnectionName();
+            \DB::setDefaultConnection($connection);
+            (new \App\Repo);
+        }
     }
 }
