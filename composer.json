@@ -60,10 +60,18 @@
             "@php artisan key:generate --ansi"
         ]
     },
-    "repositories": {
-        "local": {
+    "repositories": [
+        {
             "type": "path",
             "url": "../sushi"
+        },
+        {
+            "type": "path",
+            "url": "../framework"
+        },
+        {
+            "type": "path",
+            "url": "../livewire"
         }
-    }
+    ]
 }
