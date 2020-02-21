@@ -4,10 +4,29 @@
 
 @tailwind utilities;
 
-body { @apply .bg-gray-200; }
-.btn { @apply .inline-flex .items-center .px-4 .py-2 .border .border-gray-300 .text-sm .leading-5 .font-medium .rounded-md .text-gray-700 .bg-white .shadow-sm .rounded-md; }
-.btn:hover { @apply .bg-gray-100; }
-.btn:focus { @apply .outline-none .shadow-outline .border-blue-300; }
-.modal .wrapper { @apply fixed inset-0 flex justify-center items-center; background: rgba(0,0,0,0.2); }
-.modal .overlay { @apply fixed inset-0; }
-.modal .content { @apply fixed bg-white p-6 rounded shadow-lg; }
+body { @apply bg-gray-200 px-64 py-12; }
+.btn { @apply bg-gray-100 block w-full text-center px-4 py-2 border border-gray-400 text-sm leading-5 font-medium text-gray-700 rounded; }
+.btn:hover { @apply bg-white; }
+.btn:focus { @apply outline-none shadow-outline border-blue-300; }
+.btn:disabled { @apply cursor-not-allowed opacity-50; }
+.modal { @apply relative z-10; }
+.modal .overlay { @apply fixed inset-0 flex justify-center items-center; background: rgba(0,0,0,0.2); }
+.modal .content { @apply fixed bg-white p-6 rounded shadow-lg; width: 18rem; }
+input[type="text"] { @apply form-input w-full border-0 shadow mt-4 mb-2; }
+form>input[type="text"] { @apply mt-0 border border-gray-400 shadow-none; }
+form>span { @apply block text-red-500 text-sm; }
+input[type="text"]:focus { @apply outline-none shadow-outline border-blue-300; }
+input[type="text"] + span { @apply mb-4; }
+ul { @apply bg-white overflow-hidden shadow rounded; }
+li { @apply border-b border-gray-200 font-medium leading-5 px-3 py-2 text-indigo-600 text-sm truncate; }
+li:last-child { @apply border-b-0; }
+li:hover { @apply bg-gray-100; }
+form { margin-block-end: 0; }
+.alert { @apply border-green-400 border-l-8 mb-4 pl-2; }
+.alert strong { @apply text-gray-800; }
+.alert p { @apply -mt-1 text-gray-700 text-sm; }
+
+
+.is-loading { position: relative; }
+.is-loading::after { position: absolute!important; right: .75rem; top: 1.7rem; z-index: 4; -webkit-animation: spinAround .2s infinite linear; animation: spinAround .5s infinite linear; border: 2px solid #cbd5e0; border-radius: 290486px; border-right-color: transparent; border-top-color: transparent; content: ""; display: block; height: 1em; position: relative; width: 1em; }
+@-webkit-keyframes spinAround { from { transform: rotate(0) } to { transform: rotate(359deg) } } @keyframes spinAround { from { transform: rotate(0) } to { transform: rotate(359deg) } }
