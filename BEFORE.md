@@ -1,0 +1,1 @@
+- clear search param in query string
