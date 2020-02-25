@@ -2,6 +2,9 @@
 
 namespace {{ namespace }};
 
+use App\Repo;
+use Livewire;
+
 class {{ class }} extends \Tests\TestCase
 {
     //
